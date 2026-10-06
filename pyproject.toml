@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rmf-load-lab"
+version = "0.1.0"
+description = "Black-box load and resource regression harness for fleet bidders."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dependencies = ["psutil>=5.9,<8"]
+
+[project.scripts]
+rmf-load-lab = "rmf_load_lab:main"
+
+[tool.setuptools]
+py-modules = ["rmf_load_lab"]
